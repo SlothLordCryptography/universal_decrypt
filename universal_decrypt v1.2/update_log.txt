@@ -1,0 +1,15 @@
+v1.0
+
+    - First edition
+    - Caesar cipher and collumn transposition cipher solvers
+    - Basic tools module
+
+v1.1
+
+    - Added caesar cipher checker
+    - Expanded tools module
+
+v1.2
+
+    - Added collumn read transposition cipher solver and encoder
+    - Expaned tools module

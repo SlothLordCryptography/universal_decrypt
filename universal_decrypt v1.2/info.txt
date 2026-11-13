@@ -1,0 +1,41 @@
+Welcome to the Universal Decrypter v1.2!
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Use the main.py tab to start solving ciphers. Available modules are as follows:
+
+
+  --- tools.py ---
+
+The tools.py file has various helpful modules for basic tasks. These include:
+
+    -> tools.alphabet_lower
+        This is a list of the latin alphabet in lower case
+
+    -> tools.alphabet_lower
+        This is a list of the latin alphabet in upper case
+
+    -> tools.filter(text, include_if)
+        This takes two arguments. The 'text' argument takes the text which you are trying to filter, and the 'include_if' tells
+        the module what characters to allow. This will take the text and return a copy without any characters not in the include_if
+
+    -> tools.collumnise(text, key_length)
+        This takes two arguments. The module takes EVERY CHARACTER (prior filtering may be require - see tools.filter) of the 'text'
+        and returns a list of blocks of text of the length 'key_length'
+
+
+    --- cipher_soft ---
+
+This file contains various solvers for several different cipher, as well as option to encode. See as follows:
+
+    -> --- caesar_cipher.py ---
+
+    The caesar_cipher.py module contains two functions:
+
+        -> caesar_enc(plain_text, shift, alphabet)
+            This function takes three arguments. It takes the letters in 'plain_text' and replaces them with other letters in 'alphabet'
+            shifted by 'shift' positions, looping back around to the start
+        
+        -> caesar_dec(cipher_text, shift, alphabet)
+            This function takes three arguments. This reverses the shift applied by caesar_enc (see cipher_soft.caesar_cipher.caesar_enc)
+            by shifting 'cipher_text' backwards by 'shift' posititions in 'alphabet' looping back around to the end
